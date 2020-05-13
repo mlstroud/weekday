@@ -42,5 +42,18 @@ namespace Weekday.Tests
 
       Assert.AreEqual(result, dateDay);
     }
+
+    [TestMethod]
+    public void ParseDate_ExtractsYearFromDate_Year()
+    {
+      string date = "5/13/2020";
+      int dateYear = 2020;
+      DayOfTheWeek day = new DayOfTheWeek(date);
+
+      day.ParseDate();
+      int result = day.Year;
+
+      Assert.AreEqual(result, dateYear);
+    }
   }
 }
