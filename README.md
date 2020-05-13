@@ -10,6 +10,11 @@ _An Epicodus individual project using C# and MSTest. This project prioritizes un
 _The application will take a date provided by the user, and return what day of the week that date landed on._
 
 ## Specs
+* Program will accept input from a user.
+* Program will extract the month from the input.
+* Program will extract the day from the input.
+* Program will extract the year from the input*
+* Program will input the extracted information through a mathematical formula to return the day of the week.
 
 ## Setup/Installation Requirements
 
