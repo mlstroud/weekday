@@ -55,5 +55,18 @@ namespace Weekday.Tests
 
       Assert.AreEqual(result, dateYear);
     }
+
+    [TestMethod]
+    public void GetDayOfTheWeek_ReturnsDayOfTheWeek_DayOfTheWeek()
+    {
+      string date = "5/13/2020";
+      string dayOfTheWeek = "Wednesday";
+      DayOfTheWeek day = new DayOfTheWeek(date);
+
+      day.ParseDate();
+      string result = day.GetDayOfTheWeek();
+
+      Assert.AreEqual(result, dayOfTheWeek);
+    }
   }
 }
