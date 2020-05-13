@@ -4,6 +4,7 @@ namespace Weekday.Models
   {
     public string Date { get; set; }
     public int Month { get; set; }
+    public int Day { get; set; }
 
     public DayOfTheWeek(string date)
     {
@@ -15,6 +16,7 @@ namespace Weekday.Models
       string[] dateData = Date.Split("/");
 
       Month = int.Parse(dateData[0]);
+      Day = int.Parse(dateData[1]);
     }
   }
 }
