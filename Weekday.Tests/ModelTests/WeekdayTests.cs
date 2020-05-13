@@ -24,6 +24,7 @@ namespace Weekday.Tests
       int month = 5;
       DayOfTheWeek day = new DayOfTheWeek(date);
 
+      day.ParseDate();
       int result = day.Month;
 
       Assert.AreEqual(result, month);
