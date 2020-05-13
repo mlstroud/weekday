@@ -21,13 +21,26 @@ namespace Weekday.Tests
     public void ParseDate_ExtractsMonthFromDate_Month()
     {
       string date = "5/13/2020";
-      int month = 5;
+      int dateMonth = 5;
       DayOfTheWeek day = new DayOfTheWeek(date);
 
       day.ParseDate();
       int result = day.Month;
 
-      Assert.AreEqual(result, month);
+      Assert.AreEqual(result, dateMonth);
+    }
+
+    [TestMethod]
+    public void ParseDate_ExtractsDayFromDate_Day()
+    {
+      string date = "5/13/2020";
+      int dateDay = 13;
+      DayOfTheWeek day = new DayOfTheWeek(date);
+
+      day.ParseDate();
+      int result = day.Day;
+
+      Assert.AreEqual(result, dateDay);
     }
   }
 }
