@@ -16,5 +16,17 @@ namespace Weekday.Tests
 
       Assert.AreEqual(result, date);
     }
+
+    [TestMethod]
+    public void ParseDate_ExtractsMonthFromDate_Month()
+    {
+      string date = "5/13/2020";
+      int month = 5;
+      DayOfTheWeek day = new DayOfTheWeek(date);
+
+      int result = day.Month;
+
+      Assert.AreEqual(result, month);
+    }
   }
 }
